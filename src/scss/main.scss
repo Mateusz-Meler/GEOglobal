@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+@import "modules/nav";
+@import "modules/contact";
+@import "modules/home";
+@import "modules/about";
+@import "modules/achievements";
+@import "modules/offer";
+
+html {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+footer {
+  width: 100%;
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+  padding: 70px 70px;
+}
+
+.cooperation__box {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  justify-content: space-around;
+  align-items: center;
+
+  &--image {
+    width: 10%;
+  }
+}
+a {
+  text-decoration: none;
+}
+
+.stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

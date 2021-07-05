@@ -2,6 +2,11 @@ import "../scss/main.scss";
 import SmoothScroll from "smooth-scroll";
 var scroll = new SmoothScroll('a[href*="#"]');
 
+window.addEventListener("scroll", function () {
+  let nav = document.querySelector("nav");
+  nav.classList.toggle("sticky", window.scrollY > 0);
+});
+
 const navSlide = () => {
   const burger = document.querySelector(".burger");
   const nav = document.querySelector(".nav__box");
